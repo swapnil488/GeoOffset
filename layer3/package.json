@@ -1,0 +1,26 @@
+{
+  "name": "geooffset-layer3",
+  "version": "1.0.0",
+  "description": "GeoOffset Layer 3 - ERC-1155 carbon credits + escrow-backed dispute contracts",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:amoy": "hardhat run scripts/deploy.js --network polygonAmoy",
+    "deploy:arbsepolia": "hardhat run scripts/deploy.js --network arbitrumSepolia",
+    "demo": "hardhat run scripts/demo.js",
+    "relay:local": "hardhat run scripts/relay.js --network localhost"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^18.0.10",
+    "hardhat": "^2.29.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.6.1"
+  },
+  "private": true
+}

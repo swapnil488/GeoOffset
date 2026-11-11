@@ -1,0 +1,19 @@
+{
+  "type": "Feature",
+  "properties": {
+    "name": "sample-forest-plot",
+    "note": "Replace with a real project AOI. This is a small placeholder polygon for pipeline testing."
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [-55.0, -3.0],
+        [-54.95, -3.0],
+        [-54.95, -2.95],
+        [-55.0, -2.95],
+        [-55.0, -3.0]
+      ]
+    ]
+  }
+}

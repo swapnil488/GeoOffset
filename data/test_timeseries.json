@@ -1,0 +1,249 @@
+{
+  "project_id": "demo-project-001",
+  "generated_at": "2026-09-03T05:54:12.572658+00:00",
+  "aoi_area_km2": 30.869190616513862,
+  "sentinel2_observations": [
+    {
+      "date": "2023-06-20",
+      "sensor": "sentinel2",
+      "ndvi": 0.8685389143939158,
+      "evi": 0.570085442315836,
+      "cloud_pct": 12.866195,
+      "valid_fraction": 0.9744737149344729
+    },
+    {
+      "date": "2023-06-25",
+      "sensor": "sentinel2",
+      "ndvi": 0.8771435966826593,
+      "evi": 0.5586843308677235,
+      "cloud_pct": 1.283636,
+      "valid_fraction": 0.9577056951967037
+    },
+    {
+      "date": "2023-06-28",
+      "sensor": "sentinel2",
+      "ndvi": 0.869107669345421,
+      "evi": 0.5324187551818684,
+      "cloud_pct": 4.295635,
+      "valid_fraction": 0.8741120526326723
+    },
+    {
+      "date": "2023-07-23",
+      "sensor": "sentinel2",
+      "ndvi": 0.886872895236382,
+      "evi": 0.5451568350109866,
+      "cloud_pct": 0.173254,
+      "valid_fraction": 0.9927949160367444
+    },
+    {
+      "date": "2023-07-25",
+      "sensor": "sentinel2",
+      "ndvi": 0.8790160611143635,
+      "evi": 0.5816393963687719,
+      "cloud_pct": 0.000754,
+      "valid_fraction": 0.9927949160367444
+    },
+    {
+      "date": "2023-08-04",
+      "sensor": "sentinel2",
+      "ndvi": 0.8535928766423182,
+      "evi": 0.6227285771424358,
+      "cloud_pct": 4.60003,
+      "valid_fraction": 0.7229478978861483
+    },
+    {
+      "date": "2023-08-14",
+      "sensor": "sentinel2",
+      "ndvi": 0.8308777340572494,
+      "evi": 0.6242114823276341,
+      "cloud_pct": 10.310502,
+      "valid_fraction": 0.8111939807115154
+    },
+    {
+      "date": "2023-08-19",
+      "sensor": "sentinel2",
+      "ndvi": 0.8641226374239172,
+      "evi": 0.6333028703003265,
+      "cloud_pct": 0.375091,
+      "valid_fraction": 0.9927949160367444
+    },
+    {
+      "date": "2023-08-27",
+      "sensor": "sentinel2",
+      "ndvi": 0.8575205072900832,
+      "evi": 0.5665833125634887,
+      "cloud_pct": 8.422726,
+      "valid_fraction": 0.885448755791
+    },
+    {
+      "date": "2023-08-29",
+      "sensor": "sentinel2",
+      "ndvi": 0.8117057304262111,
+      "evi": 0.6482205719702245,
+      "cloud_pct": 9.623599,
+      "valid_fraction": 0.6556016186100658
+    }
+  ],
+  "landsat_observations": [
+    {
+      "date": "2023-06-25",
+      "sensor": "landsat",
+      "ndvi": 0.8916134295645411,
+      "evi": 0.5870234815222095,
+      "cloud_pct": 2.1,
+      "valid_fraction": 0.9874239116388867
+    },
+    {
+      "date": "2023-07-19",
+      "sensor": "landsat",
+      "ndvi": 0.847144038498807,
+      "evi": 0.6014073453467235,
+      "cloud_pct": 11.18,
+      "valid_fraction": 0.699700294038301
+    },
+    {
+      "date": "2023-07-27",
+      "sensor": "landsat",
+      "ndvi": 0.8802343437904164,
+      "evi": 0.610411283755658,
+      "cloud_pct": 17.21,
+      "valid_fraction": 0.8605339164223923
+    },
+    {
+      "date": "2023-08-04",
+      "sensor": "landsat",
+      "ndvi": 0.8789927789265674,
+      "evi": 0.628905073886096,
+      "cloud_pct": 3.58,
+      "valid_fraction": 0.7882331404061242
+    }
+  ],
+  "aligned_observations": [
+    {
+      "s2_date": "2023-06-20",
+      "landsat_date": "2023-06-25",
+      "days_apart": 5,
+      "s2_ndvi": 0.8685389143939158,
+      "landsat_ndvi": 0.8916134295645411,
+      "ndvi_agreement": true,
+      "s2_evi": 0.570085442315836,
+      "landsat_evi": 0.5870234815222095,
+      "evi_agreement": true,
+      "matched": true
+    },
+    {
+      "s2_date": "2023-06-25",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8771435966826593,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5586843308677235,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2023-06-28",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.869107669345421,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5324187551818684,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2023-07-23",
+      "landsat_date": "2023-07-19",
+      "days_apart": 4,
+      "s2_ndvi": 0.886872895236382,
+      "landsat_ndvi": 0.847144038498807,
+      "ndvi_agreement": true,
+      "s2_evi": 0.5451568350109866,
+      "landsat_evi": 0.6014073453467235,
+      "evi_agreement": true,
+      "matched": true
+    },
+    {
+      "s2_date": "2023-07-25",
+      "landsat_date": "2023-07-27",
+      "days_apart": 2,
+      "s2_ndvi": 0.8790160611143635,
+      "landsat_ndvi": 0.8802343437904164,
+      "ndvi_agreement": true,
+      "s2_evi": 0.5816393963687719,
+      "landsat_evi": 0.610411283755658,
+      "evi_agreement": true,
+      "matched": true
+    },
+    {
+      "s2_date": "2023-08-04",
+      "landsat_date": "2023-08-04",
+      "days_apart": 0,
+      "s2_ndvi": 0.8535928766423182,
+      "landsat_ndvi": 0.8789927789265674,
+      "ndvi_agreement": true,
+      "s2_evi": 0.6227285771424358,
+      "landsat_evi": 0.628905073886096,
+      "evi_agreement": true,
+      "matched": true
+    },
+    {
+      "s2_date": "2023-08-14",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8308777340572494,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.6242114823276341,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2023-08-19",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8641226374239172,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.6333028703003265,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2023-08-27",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8575205072900832,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5665833125634887,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2023-08-29",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8117057304262111,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.6482205719702245,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    }
+  ],
+  "summary": {
+    "s2_scene_count": 10,
+    "landsat_scene_count": 4,
+    "matched_pair_count": 4,
+    "ndvi_agreement_pass_count": 4
+  }
+}

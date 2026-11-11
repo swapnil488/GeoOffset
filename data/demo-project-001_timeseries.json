@@ -1,0 +1,1129 @@
+{
+  "project_id": "demo-project-001",
+  "generated_at": "2026-09-03T08:27:22.478243+00:00",
+  "aoi_area_km2": 30.869190616513862,
+  "sentinel2_observations": [
+    {
+      "date": "2022-05-26",
+      "sensor": "sentinel2",
+      "ndvi": 0.8717763569542804,
+      "evi": 0.5506275828478748,
+      "cloud_pct": 8.317388,
+      "valid_fraction": 0.9899275510418462
+    },
+    {
+      "date": "2022-06-18",
+      "sensor": "sentinel2",
+      "ndvi": 0.8473258241798103,
+      "evi": 0.537673992768543,
+      "cloud_pct": 18.082798,
+      "valid_fraction": 0.7898451415232799
+    },
+    {
+      "date": "2022-06-25",
+      "sensor": "sentinel2",
+      "ndvi": 0.8501605830301991,
+      "evi": 0.5837787400734404,
+      "cloud_pct": 12.681536,
+      "valid_fraction": 0.7665086095660386
+    },
+    {
+      "date": "2022-07-10",
+      "sensor": "sentinel2",
+      "ndvi": 0.8417496638307473,
+      "evi": 0.5615784631937907,
+      "cloud_pct": 5.126287,
+      "valid_fraction": 0.984186135092338
+    },
+    {
+      "date": "2022-07-23",
+      "sensor": "sentinel2",
+      "ndvi": 0.8675210155673865,
+      "evi": 0.5309520311062406,
+      "cloud_pct": 1.453136,
+      "valid_fraction": 0.9304031355124937
+    },
+    {
+      "date": "2022-07-25",
+      "sensor": "sentinel2",
+      "ndvi": 0.8734649430972264,
+      "evi": 0.5900123202393334,
+      "cloud_pct": 0.309452,
+      "valid_fraction": 0.9927949160367444
+    },
+    {
+      "date": "2022-07-28",
+      "sensor": "sentinel2",
+      "ndvi": 0.8479828708271331,
+      "evi": 0.5769116920806966,
+      "cloud_pct": 13.71257,
+      "valid_fraction": 0.719773776501031
+    },
+    {
+      "date": "2022-08-17",
+      "sensor": "sentinel2",
+      "ndvi": 0.8735506474611192,
+      "evi": 0.5654370290942772,
+      "cloud_pct": 0.640478,
+      "valid_fraction": 0.9905717837811168
+    },
+    {
+      "date": "2022-08-29",
+      "sensor": "sentinel2",
+      "ndvi": 0.8280859681332954,
+      "evi": 0.6277343124440835,
+      "cloud_pct": 6.329894,
+      "valid_fraction": 0.9776636648227003
+    },
+    {
+      "date": "2023-06-20",
+      "sensor": "sentinel2",
+      "ndvi": 0.8685389143939158,
+      "evi": 0.570085442315836,
+      "cloud_pct": 12.866195,
+      "valid_fraction": 0.9744737149344729
+    },
+    {
+      "date": "2023-06-25",
+      "sensor": "sentinel2",
+      "ndvi": 0.8771435966826593,
+      "evi": 0.5586843308677235,
+      "cloud_pct": 1.283636,
+      "valid_fraction": 0.9577056951967037
+    },
+    {
+      "date": "2023-06-28",
+      "sensor": "sentinel2",
+      "ndvi": 0.869107669345421,
+      "evi": 0.5324187551818684,
+      "cloud_pct": 4.295635,
+      "valid_fraction": 0.8741120526326723
+    },
+    {
+      "date": "2023-07-23",
+      "sensor": "sentinel2",
+      "ndvi": 0.886872895236382,
+      "evi": 0.5451568350109866,
+      "cloud_pct": 0.173254,
+      "valid_fraction": 0.9927949160367444
+    },
+    {
+      "date": "2023-07-25",
+      "sensor": "sentinel2",
+      "ndvi": 0.8790160611143635,
+      "evi": 0.5816393963687719,
+      "cloud_pct": 0.000754,
+      "valid_fraction": 0.9927949160367444
+    },
+    {
+      "date": "2023-08-04",
+      "sensor": "sentinel2",
+      "ndvi": 0.8535928766423182,
+      "evi": 0.6227285771424358,
+      "cloud_pct": 4.60003,
+      "valid_fraction": 0.7229478978861483
+    },
+    {
+      "date": "2023-08-14",
+      "sensor": "sentinel2",
+      "ndvi": 0.8308777340572494,
+      "evi": 0.6242114823276341,
+      "cloud_pct": 10.310502,
+      "valid_fraction": 0.8111939807115154
+    },
+    {
+      "date": "2023-08-19",
+      "sensor": "sentinel2",
+      "ndvi": 0.8641226374239172,
+      "evi": 0.6333028703003265,
+      "cloud_pct": 0.375091,
+      "valid_fraction": 0.9927949160367444
+    },
+    {
+      "date": "2023-08-27",
+      "sensor": "sentinel2",
+      "ndvi": 0.8575205072900832,
+      "evi": 0.5665833125634887,
+      "cloud_pct": 8.422726,
+      "valid_fraction": 0.885448755791
+    },
+    {
+      "date": "2023-08-29",
+      "sensor": "sentinel2",
+      "ndvi": 0.8117057304262111,
+      "evi": 0.6482205719702245,
+      "cloud_pct": 9.623599,
+      "valid_fraction": 0.6556016186100658
+    },
+    {
+      "date": "2023-09-06",
+      "sensor": "sentinel2",
+      "ndvi": 0.7875452150433048,
+      "evi": 0.5738809121166555,
+      "cloud_pct": 19.320662,
+      "valid_fraction": 0.7491500347087426
+    },
+    {
+      "date": "2023-09-13",
+      "sensor": "sentinel2",
+      "ndvi": 0.8331465284037644,
+      "evi": 0.6268149870379208,
+      "cloud_pct": 10.104527,
+      "valid_fraction": 0.9926915875684598
+    },
+    {
+      "date": "2023-09-26",
+      "sensor": "sentinel2",
+      "ndvi": 0.8401690883451831,
+      "evi": 0.5582260246391663,
+      "cloud_pct": 14.510942,
+      "valid_fraction": 0.9925882591001751
+    },
+    {
+      "date": "2023-10-01",
+      "sensor": "sentinel2",
+      "ndvi": 0.7872346255988837,
+      "evi": 0.5805737058523841,
+      "cloud_pct": 17.843312,
+      "valid_fraction": 0.9797884450914178
+    },
+    {
+      "date": "2023-10-13",
+      "sensor": "sentinel2",
+      "ndvi": 0.8371422419712732,
+      "evi": 0.6499126005376257,
+      "cloud_pct": 9.980021,
+      "valid_fraction": 0.9055043809497668
+    },
+    {
+      "date": "2023-10-28",
+      "sensor": "sentinel2",
+      "ndvi": 0.8110331923864567,
+      "evi": 0.6689927515416308,
+      "cloud_pct": 17.700355,
+      "valid_fraction": 0.9359596492200979
+    },
+    {
+      "date": "2023-11-02",
+      "sensor": "sentinel2",
+      "ndvi": 0.6157843557755138,
+      "evi": 0.7213526146677028,
+      "cloud_pct": 19.246832,
+      "valid_fraction": 0.9920892940310223
+    },
+    {
+      "date": "2023-12-15",
+      "sensor": "sentinel2",
+      "ndvi": 0.7451834300064875,
+      "evi": 0.49127055567201533,
+      "cloud_pct": 16.950126,
+      "valid_fraction": 0.7451524892663749
+    },
+    {
+      "date": "2024-06-07",
+      "sensor": "sentinel2",
+      "ndvi": 0.8702213765308547,
+      "evi": 0.5134690413770494,
+      "cloud_pct": 0.326078,
+      "valid_fraction": 0.9903957075125509
+    },
+    {
+      "date": "2024-06-22",
+      "sensor": "sentinel2",
+      "ndvi": 0.8633506709507454,
+      "evi": 0.5085360208055306,
+      "cloud_pct": 9.334061,
+      "valid_fraction": 0.992743251802602
+    },
+    {
+      "date": "2024-06-24",
+      "sensor": "sentinel2",
+      "ndvi": 0.8675343382785949,
+      "evi": 0.5659009589054873,
+      "cloud_pct": 8.338347,
+      "valid_fraction": 0.9834885159777872
+    },
+    {
+      "date": "2024-07-14",
+      "sensor": "sentinel2",
+      "ndvi": 0.875348446105741,
+      "evi": 0.5755422455843193,
+      "cloud_pct": 0.052868,
+      "valid_fraction": 0.9927949160367444
+    },
+    {
+      "date": "2024-07-17",
+      "sensor": "sentinel2",
+      "ndvi": 0.8732001819285989,
+      "evi": 0.5340764094049907,
+      "cloud_pct": 0.033064,
+      "valid_fraction": 0.9927949160367444
+    },
+    {
+      "date": "2024-07-19",
+      "sensor": "sentinel2",
+      "ndvi": 0.8664838840658806,
+      "evi": 0.5601145341805643,
+      "cloud_pct": 3.507818,
+      "valid_fraction": 0.9927949160367444
+    },
+    {
+      "date": "2024-07-22",
+      "sensor": "sentinel2",
+      "ndvi": 0.8766653075364002,
+      "evi": 0.5203929668526683,
+      "cloud_pct": 0.407741,
+      "valid_fraction": 0.9927949160367444
+    },
+    {
+      "date": "2024-07-27",
+      "sensor": "sentinel2",
+      "ndvi": 0.8386071124441408,
+      "evi": 0.567699626861063,
+      "cloud_pct": 7.850928,
+      "valid_fraction": 0.6695719314294055
+    },
+    {
+      "date": "2024-07-29",
+      "sensor": "sentinel2",
+      "ndvi": 0.852379423002676,
+      "evi": 0.567939981029744,
+      "cloud_pct": 1.466749,
+      "valid_fraction": 0.9841311785295486
+    },
+    {
+      "date": "2024-08-03",
+      "sensor": "sentinel2",
+      "ndvi": 0.8215410135829052,
+      "evi": 0.5860272390538929,
+      "cloud_pct": 13.096926,
+      "valid_fraction": 0.9556899289945838
+    },
+    {
+      "date": "2024-08-08",
+      "sensor": "sentinel2",
+      "ndvi": 0.860238605209272,
+      "evi": 0.5896304564793349,
+      "cloud_pct": 0.063644,
+      "valid_fraction": 0.9927949160367444
+    },
+    {
+      "date": "2024-08-13",
+      "sensor": "sentinel2",
+      "ndvi": 0.7806355571292233,
+      "evi": 0.6018182211277306,
+      "cloud_pct": 3.962127,
+      "valid_fraction": 0.9888426021248578
+    },
+    {
+      "date": "2024-08-16",
+      "sensor": "sentinel2",
+      "ndvi": 0.8273728660400888,
+      "evi": 0.5559192962928082,
+      "cloud_pct": 4.935842,
+      "valid_fraction": 0.8856293400172519
+    },
+    {
+      "date": "2024-08-18",
+      "sensor": "sentinel2",
+      "ndvi": 0.7578042324719985,
+      "evi": 0.5929112730981724,
+      "cloud_pct": 6.723087,
+      "valid_fraction": 0.8219501956782881
+    },
+    {
+      "date": "2024-08-26",
+      "sensor": "sentinel2",
+      "ndvi": 0.8451554899416129,
+      "evi": 0.5378129619165718,
+      "cloud_pct": 0.02079,
+      "valid_fraction": 0.9927949160367444
+    },
+    {
+      "date": "2024-08-31",
+      "sensor": "sentinel2",
+      "ndvi": 0.8496809948222643,
+      "evi": 0.5385040315203791,
+      "cloud_pct": 0.155689,
+      "valid_fraction": 0.9927949160367444
+    },
+    {
+      "date": "2024-09-02",
+      "sensor": "sentinel2",
+      "ndvi": 0.7754356973391605,
+      "evi": 0.6324888636473256,
+      "cloud_pct": 0.809542,
+      "valid_fraction": 0.8526198831831002
+    },
+    {
+      "date": "2024-09-27",
+      "sensor": "sentinel2",
+      "ndvi": 0.7897196665484912,
+      "evi": 0.6184549074773393,
+      "cloud_pct": 1.855041,
+      "valid_fraction": 0.9355280122717644
+    },
+    {
+      "date": "2024-11-01",
+      "sensor": "sentinel2",
+      "ndvi": 0.8215660697511987,
+      "evi": 0.6612566482602119,
+      "cloud_pct": 18.916062,
+      "valid_fraction": 0.9910899963100481
+    },
+    {
+      "date": "2024-11-19",
+      "sensor": "sentinel2",
+      "ndvi": 0.7967961063127645,
+      "evi": 0.5655271553695227,
+      "cloud_pct": 18.91741,
+      "valid_fraction": 0.9927949160367444
+    },
+    {
+      "date": "2024-11-29",
+      "sensor": "sentinel2",
+      "ndvi": 0.796358260945872,
+      "evi": 0.588765951568153,
+      "cloud_pct": 6.437542,
+      "valid_fraction": 0.9927949160367444
+    }
+  ],
+  "landsat_observations": [
+    {
+      "date": "2022-06-22",
+      "sensor": "landsat",
+      "ndvi": 0.8734765170891905,
+      "evi": 0.5751840219702855,
+      "cloud_pct": 14.37,
+      "valid_fraction": 0.8445542837322254
+    },
+    {
+      "date": "2022-07-24",
+      "sensor": "landsat",
+      "ndvi": 0.8852613617395599,
+      "evi": 0.5956869963125382,
+      "cloud_pct": 6.29,
+      "valid_fraction": 0.9874239116388867
+    },
+    {
+      "date": "2022-08-17",
+      "sensor": "landsat",
+      "ndvi": 0.8859556008613639,
+      "evi": 0.6217126061167734,
+      "cloud_pct": 2.52,
+      "valid_fraction": 0.9874239116388867
+    },
+    {
+      "date": "2022-09-10",
+      "sensor": "landsat",
+      "ndvi": 0.8721181878504768,
+      "evi": 0.6383149191355971,
+      "cloud_pct": 11.89,
+      "valid_fraction": 0.9222718709405399
+    },
+    {
+      "date": "2023-06-25",
+      "sensor": "landsat",
+      "ndvi": 0.8916134295645411,
+      "evi": 0.5870234815222095,
+      "cloud_pct": 2.1,
+      "valid_fraction": 0.9874239116388867
+    },
+    {
+      "date": "2023-07-19",
+      "sensor": "landsat",
+      "ndvi": 0.847144038498807,
+      "evi": 0.6014073453467235,
+      "cloud_pct": 11.18,
+      "valid_fraction": 0.699700294038301
+    },
+    {
+      "date": "2023-07-27",
+      "sensor": "landsat",
+      "ndvi": 0.8802343437904164,
+      "evi": 0.610411283755658,
+      "cloud_pct": 17.21,
+      "valid_fraction": 0.8605339164223923
+    },
+    {
+      "date": "2023-08-04",
+      "sensor": "landsat",
+      "ndvi": 0.8789927789265674,
+      "evi": 0.628905073886096,
+      "cloud_pct": 3.58,
+      "valid_fraction": 0.7882331404061242
+    },
+    {
+      "date": "2023-09-13",
+      "sensor": "landsat",
+      "ndvi": 0.8690232546848274,
+      "evi": 0.6184503926493952,
+      "cloud_pct": 7.76,
+      "valid_fraction": 0.9874239116388867
+    },
+    {
+      "date": "2023-11-16",
+      "sensor": "landsat",
+      "ndvi": 0.8561540318889617,
+      "evi": 0.5975491125220685,
+      "cloud_pct": 13.71,
+      "valid_fraction": 0.9874239116388867
+    },
+    {
+      "date": "2024-06-27",
+      "sensor": "landsat",
+      "ndvi": 0.8788482893150539,
+      "evi": 0.5766964125202706,
+      "cloud_pct": 18.38,
+      "valid_fraction": 0.9685313274344332
+    },
+    {
+      "date": "2024-07-05",
+      "sensor": "landsat",
+      "ndvi": 0.8755991276294331,
+      "evi": 0.5762614203364124,
+      "cloud_pct": 15.41,
+      "valid_fraction": 0.9612457747580495
+    },
+    {
+      "date": "2024-07-21",
+      "sensor": "landsat",
+      "ndvi": 0.8761069845667491,
+      "evi": 0.5716245334942557,
+      "cloud_pct": 12.67,
+      "valid_fraction": 0.9874239116388867
+    },
+    {
+      "date": "2024-07-29",
+      "sensor": "landsat",
+      "ndvi": 0.8769483903966515,
+      "evi": 0.5862663314694688,
+      "cloud_pct": 4.58,
+      "valid_fraction": 0.9874239116388867
+    },
+    {
+      "date": "2024-08-06",
+      "sensor": "landsat",
+      "ndvi": 0.8497902916670512,
+      "evi": 0.49739919522094306,
+      "cloud_pct": 7.17,
+      "valid_fraction": 0.7237851366700013
+    },
+    {
+      "date": "2024-08-30",
+      "sensor": "landsat",
+      "ndvi": 0.8634871768115203,
+      "evi": 0.6031901039242291,
+      "cloud_pct": 11.24,
+      "valid_fraction": 0.936886843996475
+    },
+    {
+      "date": "2024-09-23",
+      "sensor": "landsat",
+      "ndvi": 0.8600433118223808,
+      "evi": 0.6067219848394335,
+      "cloud_pct": 7.5,
+      "valid_fraction": 0.9799139195509423
+    },
+    {
+      "date": "2024-11-02",
+      "sensor": "landsat",
+      "ndvi": 0.8573011834882073,
+      "evi": 0.6064010496956482,
+      "cloud_pct": 10.05,
+      "valid_fraction": 0.9874239116388867
+    },
+    {
+      "date": "2024-11-10",
+      "sensor": "landsat",
+      "ndvi": 0.8564267141742291,
+      "evi": 0.598435225059386,
+      "cloud_pct": 0.57,
+      "valid_fraction": 0.9874239116388867
+    }
+  ],
+  "aligned_observations": [
+    {
+      "s2_date": "2022-05-26",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8717763569542804,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5506275828478748,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2022-06-18",
+      "landsat_date": "2022-06-22",
+      "days_apart": 4,
+      "s2_ndvi": 0.8473258241798103,
+      "landsat_ndvi": 0.8734765170891905,
+      "ndvi_agreement": true,
+      "s2_evi": 0.537673992768543,
+      "landsat_evi": 0.5751840219702855,
+      "evi_agreement": true,
+      "matched": true
+    },
+    {
+      "s2_date": "2022-06-25",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8501605830301991,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5837787400734404,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2022-07-10",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8417496638307473,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5615784631937907,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2022-07-23",
+      "landsat_date": "2022-07-24",
+      "days_apart": 1,
+      "s2_ndvi": 0.8675210155673865,
+      "landsat_ndvi": 0.8852613617395599,
+      "ndvi_agreement": true,
+      "s2_evi": 0.5309520311062406,
+      "landsat_evi": 0.5956869963125382,
+      "evi_agreement": true,
+      "matched": true
+    },
+    {
+      "s2_date": "2022-07-25",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8734649430972264,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5900123202393334,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2022-07-28",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8479828708271331,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5769116920806966,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2022-08-17",
+      "landsat_date": "2022-08-17",
+      "days_apart": 0,
+      "s2_ndvi": 0.8735506474611192,
+      "landsat_ndvi": 0.8859556008613639,
+      "ndvi_agreement": true,
+      "s2_evi": 0.5654370290942772,
+      "landsat_evi": 0.6217126061167734,
+      "evi_agreement": true,
+      "matched": true
+    },
+    {
+      "s2_date": "2022-08-29",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8280859681332954,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.6277343124440835,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2023-06-20",
+      "landsat_date": "2023-06-25",
+      "days_apart": 5,
+      "s2_ndvi": 0.8685389143939158,
+      "landsat_ndvi": 0.8916134295645411,
+      "ndvi_agreement": true,
+      "s2_evi": 0.570085442315836,
+      "landsat_evi": 0.5870234815222095,
+      "evi_agreement": true,
+      "matched": true
+    },
+    {
+      "s2_date": "2023-06-25",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8771435966826593,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5586843308677235,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2023-06-28",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.869107669345421,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5324187551818684,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2023-07-23",
+      "landsat_date": "2023-07-19",
+      "days_apart": 4,
+      "s2_ndvi": 0.886872895236382,
+      "landsat_ndvi": 0.847144038498807,
+      "ndvi_agreement": true,
+      "s2_evi": 0.5451568350109866,
+      "landsat_evi": 0.6014073453467235,
+      "evi_agreement": true,
+      "matched": true
+    },
+    {
+      "s2_date": "2023-07-25",
+      "landsat_date": "2023-07-27",
+      "days_apart": 2,
+      "s2_ndvi": 0.8790160611143635,
+      "landsat_ndvi": 0.8802343437904164,
+      "ndvi_agreement": true,
+      "s2_evi": 0.5816393963687719,
+      "landsat_evi": 0.610411283755658,
+      "evi_agreement": true,
+      "matched": true
+    },
+    {
+      "s2_date": "2023-08-04",
+      "landsat_date": "2023-08-04",
+      "days_apart": 0,
+      "s2_ndvi": 0.8535928766423182,
+      "landsat_ndvi": 0.8789927789265674,
+      "ndvi_agreement": true,
+      "s2_evi": 0.6227285771424358,
+      "landsat_evi": 0.628905073886096,
+      "evi_agreement": true,
+      "matched": true
+    },
+    {
+      "s2_date": "2023-08-14",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8308777340572494,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.6242114823276341,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2023-08-19",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8641226374239172,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.6333028703003265,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2023-08-27",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8575205072900832,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5665833125634887,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2023-08-29",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8117057304262111,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.6482205719702245,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2023-09-06",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.7875452150433048,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5738809121166555,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2023-09-13",
+      "landsat_date": "2023-09-13",
+      "days_apart": 0,
+      "s2_ndvi": 0.8331465284037644,
+      "landsat_ndvi": 0.8690232546848274,
+      "ndvi_agreement": true,
+      "s2_evi": 0.6268149870379208,
+      "landsat_evi": 0.6184503926493952,
+      "evi_agreement": true,
+      "matched": true
+    },
+    {
+      "s2_date": "2023-09-26",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8401690883451831,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5582260246391663,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2023-10-01",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.7872346255988837,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5805737058523841,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2023-10-13",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8371422419712732,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.6499126005376257,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2023-10-28",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8110331923864567,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.6689927515416308,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2023-11-02",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.6157843557755138,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.7213526146677028,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2023-12-15",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.7451834300064875,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.49127055567201533,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2024-06-07",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8702213765308547,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5134690413770494,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2024-06-22",
+      "landsat_date": "2024-06-27",
+      "days_apart": 5,
+      "s2_ndvi": 0.8633506709507454,
+      "landsat_ndvi": 0.8788482893150539,
+      "ndvi_agreement": true,
+      "s2_evi": 0.5085360208055306,
+      "landsat_evi": 0.5766964125202706,
+      "evi_agreement": true,
+      "matched": true
+    },
+    {
+      "s2_date": "2024-06-24",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8675343382785949,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5659009589054873,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2024-07-14",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.875348446105741,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5755422455843193,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2024-07-17",
+      "landsat_date": "2024-07-21",
+      "days_apart": 4,
+      "s2_ndvi": 0.8732001819285989,
+      "landsat_ndvi": 0.8761069845667491,
+      "ndvi_agreement": true,
+      "s2_evi": 0.5340764094049907,
+      "landsat_evi": 0.5716245334942557,
+      "evi_agreement": true,
+      "matched": true
+    },
+    {
+      "s2_date": "2024-07-19",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8664838840658806,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5601145341805643,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2024-07-22",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8766653075364002,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5203929668526683,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2024-07-27",
+      "landsat_date": "2024-07-29",
+      "days_apart": 2,
+      "s2_ndvi": 0.8386071124441408,
+      "landsat_ndvi": 0.8769483903966515,
+      "ndvi_agreement": true,
+      "s2_evi": 0.567699626861063,
+      "landsat_evi": 0.5862663314694688,
+      "evi_agreement": true,
+      "matched": true
+    },
+    {
+      "s2_date": "2024-07-29",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.852379423002676,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.567939981029744,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2024-08-03",
+      "landsat_date": "2024-08-06",
+      "days_apart": 3,
+      "s2_ndvi": 0.8215410135829052,
+      "landsat_ndvi": 0.8497902916670512,
+      "ndvi_agreement": true,
+      "s2_evi": 0.5860272390538929,
+      "landsat_evi": 0.49739919522094306,
+      "evi_agreement": false,
+      "matched": true
+    },
+    {
+      "s2_date": "2024-08-08",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.860238605209272,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5896304564793349,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2024-08-13",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.7806355571292233,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.6018182211277306,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2024-08-16",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8273728660400888,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5559192962928082,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2024-08-18",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.7578042324719985,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5929112730981724,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2024-08-26",
+      "landsat_date": "2024-08-30",
+      "days_apart": 4,
+      "s2_ndvi": 0.8451554899416129,
+      "landsat_ndvi": 0.8634871768115203,
+      "ndvi_agreement": true,
+      "s2_evi": 0.5378129619165718,
+      "landsat_evi": 0.6031901039242291,
+      "evi_agreement": true,
+      "matched": true
+    },
+    {
+      "s2_date": "2024-08-31",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.8496809948222643,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5385040315203791,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2024-09-02",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.7754356973391605,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.6324888636473256,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2024-09-27",
+      "landsat_date": "2024-09-23",
+      "days_apart": 4,
+      "s2_ndvi": 0.7897196665484912,
+      "landsat_ndvi": 0.8600433118223808,
+      "ndvi_agreement": true,
+      "s2_evi": 0.6184549074773393,
+      "landsat_evi": 0.6067219848394335,
+      "evi_agreement": true,
+      "matched": true
+    },
+    {
+      "s2_date": "2024-11-01",
+      "landsat_date": "2024-11-02",
+      "days_apart": 1,
+      "s2_ndvi": 0.8215660697511987,
+      "landsat_ndvi": 0.8573011834882073,
+      "ndvi_agreement": true,
+      "s2_evi": 0.6612566482602119,
+      "landsat_evi": 0.6064010496956482,
+      "evi_agreement": true,
+      "matched": true
+    },
+    {
+      "s2_date": "2024-11-19",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.7967961063127645,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.5655271553695227,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    },
+    {
+      "s2_date": "2024-11-29",
+      "landsat_date": null,
+      "days_apart": null,
+      "s2_ndvi": 0.796358260945872,
+      "landsat_ndvi": null,
+      "ndvi_agreement": null,
+      "s2_evi": 0.588765951568153,
+      "landsat_evi": null,
+      "evi_agreement": null,
+      "matched": false
+    }
+  ],
+  "summary": {
+    "s2_scene_count": 48,
+    "landsat_scene_count": 19,
+    "matched_pair_count": 15,
+    "ndvi_agreement_pass_count": 15
+  }
+}
