@@ -11,7 +11,9 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     # --- Database ---
-    database_url: str = "postgresql://geooffset:geooffset@localhost:5432/geooffset"
+    # Driver named explicitly: SQLAlchemy 2.1+ maps a bare postgresql:// URL
+    # to psycopg (v3), which isn't in requirements.txt.
+    database_url: str = "postgresql+psycopg2://geooffset:geooffset@localhost:5432/geooffset"
     cors_origins: str = "http://localhost:3000"
 
     # --- Data sufficiency thresholds ---

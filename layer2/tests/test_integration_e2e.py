@@ -86,6 +86,15 @@ def test_full_lifecycle_verify_dispute_resolve(demo_export):
     assert record["agreement_rate"] == pytest.approx(1.0)
     verification_id = record["id"]
 
+    # --- 2b. Layer 4 map endpoint: AOI back out as GeoJSON + latest status ---
+    list_resp = client.get("/projects")
+    assert list_resp.status_code == 200
+    listed = list_resp.json()
+    assert [p["project_id"] for p in listed] == [project_id]
+    assert listed[0]["aoi_geojson"]["type"] == "Polygon"
+    assert listed[0]["latest_verification"]["id"] == verification_id
+    assert client.get(f"/projects/{project_id}").json()["aoi_geojson"]["type"] == "Polygon"
+
     # --- 3. Fetch the detail view (normalized aligned observations) ---
     detail_resp = client.get(f"/verifications/{verification_id}")
     assert detail_resp.status_code == 200
@@ -101,6 +110,9 @@ def test_full_lifecycle_verify_dispute_resolve(demo_export):
     dispute = dispute_resp.json()
     assert dispute["status"] == "OPEN"
     dispute_id = dispute["id"]
+
+    listed_disputes = client.get(f"/verifications/{verification_id}/disputes").json()
+    assert [d["id"] for d in listed_disputes] == [dispute_id]
 
     # Record should now be locked under dispute, not challengeable again.
     second_dispute_resp = client.post(

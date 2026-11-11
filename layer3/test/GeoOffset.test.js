@@ -174,4 +174,62 @@ describe("GeoOffset Layer 3", function () {
         .to.be.revertedWithCustomError(credits, "ERC1155InsufficientBalance");
     });
   });
+  describe("marketplace", function () {
+    const PRICE = ethers.parseEther("2"); // 2 GEO per tonne
+
+    async function minted() {
+      const f = await recorded();
+      await time.increase(WINDOW);
+      await f.escrow.finalize(1); // owner now holds 1200 credits of token id 1
+      const market = await ethers.deployContract("GeoOffsetMarketplace", [
+        await f.credits.getAddress(), await f.token.getAddress(),
+      ]);
+      await f.token.mint(f.buyer.address, ethers.parseEther("10000"));
+      await f.token.connect(f.buyer).approve(await market.getAddress(), ethers.MaxUint256);
+      return { ...f, market };
+    }
+
+    it("requires operator approval and enough credits to list", async function () {
+      const { market, credits, owner } = await loadFixture(minted);
+      await expect(market.connect(owner).list(1, 100, PRICE)).to.be.revertedWith("Market: approve marketplace first");
+      await credits.connect(owner).setApprovalForAll(await market.getAddress(), true);
+      await expect(market.connect(owner).list(1, 5000, PRICE)).to.be.revertedWith("Market: insufficient credits");
+    });
+
+    it("partial buy pays the seller and moves credits atomically, without custody", async function () {
+      const { market, credits, token, owner, buyer } = await loadFixture(minted);
+      const marketAddr = await market.getAddress();
+      await credits.connect(owner).setApprovalForAll(marketAddr, true);
+      await market.connect(owner).list(1, 500, PRICE);
+
+      const ownerBefore = await token.balanceOf(owner.address);
+      await expect(market.connect(buyer).buy(1, 200))
+        .to.emit(market, "Purchased").withArgs(1, buyer.address, 1, 200, PRICE * 200n);
+
+      expect(await credits.balanceOf(buyer.address, 1)).to.equal(200);
+      expect(await credits.balanceOf(owner.address, 1)).to.equal(1000);
+      expect((await token.balanceOf(owner.address)) - ownerBefore).to.equal(PRICE * 200n);
+      expect(await credits.balanceOf(marketAddr, 1)).to.equal(0);
+      expect(await token.balanceOf(marketAddr)).to.equal(0);
+      expect((await market.listings(1)).remaining).to.equal(300);
+
+      await market.connect(buyer).buy(1, 300);
+      expect((await market.listings(1)).active).to.equal(false);
+      await expect(market.connect(buyer).buy(1, 1)).to.be.revertedWith("Market: listing not active");
+    });
+
+    it("only the seller can cancel; a listing can't sell credits already retired", async function () {
+      const { market, credits, owner, buyer } = await loadFixture(minted);
+      await credits.connect(owner).setApprovalForAll(await market.getAddress(), true);
+      await market.connect(owner).list(1, 1200, PRICE);
+      await expect(market.connect(buyer).cancel(1)).to.be.revertedWith("Market: not seller");
+
+      await credits.connect(owner).retire(1, 1000, "Owner Corp", "BR");
+      await expect(market.connect(buyer).buy(1, 500))
+        .to.be.revertedWithCustomError(credits, "ERC1155InsufficientBalance");
+
+      await market.connect(owner).cancel(1);
+      expect((await market.listings(1)).active).to.equal(false);
+    });
+  });
 });

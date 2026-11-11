@@ -11,6 +11,7 @@ itself, and only mints carbon credits once a claim is final.
 |---|---|
 | `GeoOffsetEscrow.sol` | Project bonds, 72h challenge window, challenger stakes, dispute settlement, triggers minting |
 | `GeoOffsetCredits.sol` | ERC-1155 credits. Token id = Layer 2 verification id, 1 token = 1 tCO2e. `retire()` burns permanently |
+| `GeoOffsetMarketplace.sol` | Fixed-price listings for credits, paid in GEO. Non-custodial: credits and payment move wallet-to-wallet in one transaction |
 | `MockGeoToken.sol` | Test ERC-20 ("GEO") for bonds/stakes on local/testnets only |
 
 **Lifecycle (mirrors Layer 2 `FinalizationStatus`):**
@@ -50,12 +51,13 @@ layer3/
 ├── contracts/
 │   ├── GeoOffsetEscrow.sol
 │   ├── GeoOffsetCredits.sol
+│   ├── GeoOffsetMarketplace.sol
 │   └── MockGeoToken.sol
 ├── scripts/
-│   ├── deploy.js     # deploys all three, grants MINTER_ROLE, writes deployments/<network>.json
+│   ├── deploy.js     # deploys all four, grants MINTER_ROLE, writes deployments/<network>.json (+ layer4/public/deployments/)
 │   ├── relay.js      # Layer 2 API -> chain oracle bridge (record / resolve / finalize / status)
 │   └── demo.js       # full lifecycle on a local chain, no Layer 2 needed
-├── test/GeoOffset.test.js   # 16 tests
+├── test/GeoOffset.test.js   # 19 tests
 ├── hardhat.config.js        # hardhat, localhost, polygonAmoy, arbitrumSepolia
 └── .env.example
 ```
@@ -73,7 +75,7 @@ copy .env.example .env      # only needed for testnets / custom settings
 ## 3. Test and demo
 
 ```powershell
-npx hardhat test                  # 16 passing
+npx hardhat test                  # 19 passing
 npx hardhat run scripts/demo.js   # walk-through of both paths
 ```
 

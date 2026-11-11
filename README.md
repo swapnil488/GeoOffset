@@ -20,8 +20,10 @@ are burned, so the same tonne can't be claimed twice in two countries.
               ▼
  Layer 3  Solidity contracts         ERC-1155 credits (1 token = 1 tCO2e), bond and
           (layer3/)                  stake escrow, on-chain window + payouts, retirement
+              │  ethers.js (wallet) + REST
               ▼
-Frontend React app                  GIS visualizer + marketplace   (planned)
+ Layer 4  React frontend             satellite map of AOIs, S2-vs-Landsat agreement
+          (layer4/)                  view, challenge window, marketplace, retirement
 ```
 
 | Layer | What it does | Stack | Docs |
@@ -29,7 +31,7 @@ Frontend React app                  GIS visualizer + marketplace   (planned)
 | 1 | Pulls and aligns dual-satellite vegetation indices for a project AOI | Python, Earth Engine API | [below](#layer-1--data-ingestion-google-earth-engine) |
 | 2 | Decides whether a claim is trustworthy, runs disputes | FastAPI, SQLAlchemy, PostgreSQL + PostGIS | [layer2/README.md](layer2/README.md) |
 | 3 | Holds bonds and stakes, enforces the challenge window, mints and retires credits | Solidity 0.8.24, OpenZeppelin 5, Hardhat | [layer3/README.md](layer3/README.md) |
-| Frontend | Map view of projects and a credit marketplace | React | planned |
+| 4 | Map of projects, verification view, challenge/finalize, marketplace, retirement | React 18, Vite, Leaflet, Recharts, ethers v6 | [layer4/README.md](layer4/README.md) |
 
 ## How a claim flows end to end
 
@@ -39,7 +41,10 @@ Frontend React app                  GIS visualizer + marketplace   (planned)
 4. **Open the window:** the relay records the verdict on-chain, and the contract starts a 72-hour challenge window.
 5. **Challenge (optional):** anyone can stake at least the bond amount. Layer 2 runs a second, independent recheck, and the relay reports the verdict. The loser's deposit pays the winner.
 6. **Mint:** if nobody challenges or the project wins, ERC-1155 credits are minted to the owner.
-7. **Retire:** a buyer burns credits with `retire()`, naming the beneficiary and jurisdiction.
+7. **Trade:** holders list credits on the marketplace contract; a buyer pays in GEO and receives the credits in the same transaction.
+8. **Retire:** a buyer burns credits with `retire()`, naming the beneficiary and jurisdiction.
+
+Layer 4 drives every step above from the browser.
 
 ## Repository structure
 
@@ -49,6 +54,7 @@ GeoOffset/
 ├── scripts/run_full_pipeline.py   # Layer 1 -> Layer 2 glue (HTTP)
 ├── layer2/                        # Layer 2 — FastAPI verification + dispute engine
 ├── layer3/                        # Layer 3 — Solidity contracts, tests, deploy/relay scripts
+├── layer4/                        # Layer 4 — React frontend (map, verification view, marketplace)
 └── requirements.txt               # Layer 1 Python deps
 ```
 
@@ -72,8 +78,13 @@ python scripts/run_full_pipeline.py --skip-run --out data/demo-project-001_times
 
 # Layer 3 — needs Node.js 18+
 cd layer3; npm install
-npx hardhat test                  # 16 contract tests
+npx hardhat test                  # 19 contract tests
 npx hardhat run scripts/demo.js   # full on-chain lifecycle demo
+
+# Layer 4 — local chain + Layer 2 running (see layer4/README.md)
+npx hardhat node                                          # in layer3/, separate terminal
+npx hardhat run scripts/deploy.js --network localhost     # in layer3/
+cd layer4; npm install; npm run dev                       # http://localhost:3000
 ```
 
 ## Tests
@@ -82,7 +93,7 @@ npx hardhat run scripts/demo.js   # full on-chain lifecycle demo
 |---|---|---|
 | 1 | `pytest tests/` | smoke test |
 | 2 | `cd layer2; pytest tests/` | 9 (incl. end-to-end against real Postgres + PostGIS) |
-| 3 | `cd layer3; npx hardhat test` | 16 |
+| 3 | `cd layer3; npx hardhat test` | 19 |
 
 ## Status
 
@@ -91,7 +102,8 @@ npx hardhat run scripts/demo.js   # full on-chain lifecycle demo
 - [x] Layer 1 -> Layer 2 glue script
 - [x] Layer 3: ERC-1155 credits, escrow contract, deploy and oracle relay scripts
 - [ ] Layer 3 testnet deployment (Polygon Amoy / Arbitrum Sepolia)
-- [ ] Frontend: React frontend with GIS visualizer and marketplace
+- [x] Layer 4: React frontend with GIS visualizer, verification view and marketplace
+- [x] Marketplace contract (non-custodial fixed-price listings)
 
 ---
 

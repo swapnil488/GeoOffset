@@ -43,6 +43,16 @@ def create_dispute(
         raise HTTPException(400, str(e))
 
 
+@router.get("/verifications/{verification_id}/disputes", response_model=list[DisputeOut])
+def list_disputes(verification_id: int, db: Session = Depends(get_db)):
+    return (
+        db.query(Dispute)
+        .filter(Dispute.verification_record_id == verification_id)
+        .order_by(Dispute.opened_at.desc())
+        .all()
+    )
+
+
 @router.get("/disputes/{dispute_id}", response_model=DisputeOut)
 def get_dispute(dispute_id: int, db: Session = Depends(get_db)):
     dispute = db.query(Dispute).filter(Dispute.id == dispute_id).first()

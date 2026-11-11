@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.env
+.env.local
+public/deployments/localhost.json
+public/deployments/hardhat.json

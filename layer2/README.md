@@ -122,12 +122,14 @@ PostgreSQL + PostGIS database.
 | Method | Path | Purpose |
 |---|---|---|
 | POST | `/projects` | Register a project + AOI (GeoJSON) + bond deposit |
-| GET | `/projects/{project_id}` | Fetch project |
+| GET | `/projects` | List projects with AOI GeoJSON and latest verification (used by the Layer 4 map) |
+| GET | `/projects/{project_id}` | Fetch project (includes AOI as GeoJSON) |
 | POST | `/projects/{project_id}/verifications` | Ingest a Layer 1 export, run the dual-pipeline check |
 | GET | `/projects/{project_id}/verifications` | List a project's verification history |
 | GET | `/verifications/{id}` | Fetch a verification record (with normalized aligned observations) |
 | POST | `/verifications/{id}/finalize` | Manually check if the 72h challenge window has elapsed unchallenged (a scheduled job would call this in production) |
 | POST | `/verifications/{id}/disputes` | Open a dispute with a staked challenge |
+| GET | `/verifications/{id}/disputes` | List disputes on a verification |
 | GET | `/disputes/{id}` | Fetch a dispute |
 | POST | `/disputes/{id}/resolve` | Submit the independent recheck payload, get the adjudication + escrow verdict |
 

@@ -1,12 +1,13 @@
 /**
  * Deploys Layer 3: stake token (mock, unless STAKE_TOKEN_ADDRESS is set),
- * GeoOffsetCredits (ERC-1155) and GeoOffsetEscrow, then grants the escrow
- * MINTER_ROLE on the credits contract.
+ * GeoOffsetCredits (ERC-1155), GeoOffsetEscrow and GeoOffsetMarketplace, then
+ * grants the escrow MINTER_ROLE on the credits contract.
  *
  *   npx hardhat run scripts/deploy.js --network localhost
  *   npx hardhat run scripts/deploy.js --network polygonAmoy
  *
- * Addresses are written to deployments/<network>.json, which relay.js reads.
+ * Addresses are written to deployments/<network>.json, which relay.js reads,
+ * and copied to ../layer4/public/deployments/<network>.json for the frontend.
  */
 const fs = require("fs");
 const path = require("path");
@@ -41,6 +42,13 @@ async function main() {
   await escrow.waitForDeployment();
   console.log(`GeoOffsetEscrow  ${await escrow.getAddress()}`);
 
+  const market = await ethers.deployContract("GeoOffsetMarketplace", [
+    await credits.getAddress(),
+    stakeTokenAddress,
+  ]);
+  await market.waitForDeployment();
+  console.log(`GeoOffsetMarket  ${await market.getAddress()}`);
+
   await (await credits.grantRole(await credits.MINTER_ROLE(), await escrow.getAddress())).wait();
   console.log("Granted MINTER_ROLE to escrow");
 
@@ -50,13 +58,22 @@ async function main() {
     stakeToken: stakeTokenAddress,
     credits: await credits.getAddress(),
     escrow: await escrow.getAddress(),
+    marketplace: await market.getAddress(),
     oracle,
+    deployBlock: await ethers.provider.getBlockNumber(),
     deployedAt: new Date().toISOString(),
   };
   const dir = path.join(__dirname, "..", "deployments");
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, `${network.name}.json`), JSON.stringify(out, null, 2));
   console.log(`Saved deployments/${network.name}.json`);
+
+  const frontendDir = path.join(__dirname, "..", "..", "layer4", "public", "deployments");
+  if (fs.existsSync(path.join(__dirname, "..", "..", "layer4"))) {
+    fs.mkdirSync(frontendDir, { recursive: true });
+    fs.writeFileSync(path.join(frontendDir, `${network.name}.json`), JSON.stringify(out, null, 2));
+    console.log(`Copied to layer4/public/deployments/${network.name}.json`);
+  }
 }
 
 main().catch((e) => {
